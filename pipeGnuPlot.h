@@ -31,8 +31,8 @@ public:
 #endif
     }
 
-    void cmd(std::string args) {
-        fprintf(pipeHandle, "%s\n", args.c_str());
+    void cmd(std::string scmd) {
+        fprintf(pipeHandle, "%s\n", scmd.c_str());
         fflush(pipeHandle);
     }
 
